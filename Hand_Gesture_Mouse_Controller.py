@@ -14,12 +14,12 @@ hands = mp_hands.Hands(
     max_num_hands=1,
     min_detection_confidence=0.7,
     min_tracking_confidence=0.7
-) #assign the parameters of the model(one hand,max 70% visible to work, min same)
+)
 
 dragging = False
 last_single_click = 0
 last_double_click = 0
-click_delay = 0.5  # Seconds between allowed clicks
+click_delay = 0.5
 
 def distance(p1, p2):
     return math.hypot(p1[0] - p2[0], p1[1] - p2[1])
